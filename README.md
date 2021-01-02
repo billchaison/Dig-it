@@ -1,7 +1,7 @@
 # Dig-it
 Digi Router Password Decoder
 
-![alt text](/billchaison/Dig-it/raw/main/digi00.png)
+![alt text](https://github.com/billchaison/Dig-it/blob/main/digi00.png)
 
 The Digi wireless router (WR21) stores passwords as base64 using XOR obfuscation.  An example password looks like this:
 
@@ -9,7 +9,7 @@ The Digi wireless router (WR21) stores passwords as base64 using XOR obfuscation
 
 The stored password can be seen in the web interface by executing the `CONFIG C SHOW` command after navigating to "Administration >> Execute a command".
 
-![alt text](/billchaison/Dig-it/raw/main/digi01.png)
+![alt text](https://github.com/billchaison/Dig-it/blob/main/digi01.png)
 
 The following bash script `digi_pw_decoder.sh` can be used to decode the password by supplying the Base64 string as an argument.
 
@@ -37,4 +37,4 @@ echo $decpwd | xxd -r -p | hexdump -Cv
 ```
 
 Here is an example output:<br />
-![alt text](/billchaison/Dig-it/raw/main/digi02.png)
+![alt text](https://github.com/billchaison/Dig-it/blob/main/digi02.png)
